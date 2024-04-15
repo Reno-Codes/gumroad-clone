@@ -5,7 +5,7 @@ header {
     padding-left: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-bottom: 2px solid var(--black);
-    height: 70px;
+    height: 68px;
 }
 
 nav {
@@ -62,7 +62,7 @@ nav {
 .nav-link.log-in {
     color: var(--black);
     border-left: 2px solid var(--black);
-    padding: 1.5rem 3vw;
+    padding: 1.6rem 3vw;
     margin-left: 0;
     margin-right: 0;
     font-size: 1rem;
@@ -72,7 +72,7 @@ nav {
     color: var(--white);
     background-color: var(--black);
     border-left: 2px solid var(--black);
-    border-bottom: 2px solid var(--black);
+    border-bottom: 2px;
     padding: 1.5rem 3vw;
     margin-left: 0;
     margin-right: 0;

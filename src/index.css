@@ -1,13 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-
 @font-face {
     font-family: "Mabry Pro";
-    src: url("MabryPro-Bold.eot");
+    src: url("./assets/fonts/MabryPro-Bold.eot");
     src: local("Mabry Pro Bold"), local("MabryPro-Bold"),
-        url("MabryPro-Bold.eot?#iefix") format("embedded-opentype"),
-        url("MabryPro-Bold.woff2") format("woff2"),
-        url("MabryPro-Bold.woff") format("woff"),
-        url("MabryPro-Bold.ttf") format("truetype");
+        url("./assets/fonts/MabryPro-Bold.eot?#iefix")
+            format("embedded-opentype"),
+        url("./assets/fonts/MabryPro-Bold.woff2") format("woff2"),
+        url("./assets/fonts/MabryPro-Bold.woff") format("woff"),
+        url("./assets/fonts/MabryPro-Bold.ttf") format("truetype");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -15,25 +14,27 @@
 
 @font-face {
     font-family: "Mabry Pro";
-    src: url("MabryPro-Medium.eot");
+    src: url("./assets/fonts/MabryPro-Medium.eot");
     src: local("Mabry Pro Medium"), local("MabryPro-Medium"),
-        url("MabryPro-Medium.eot?#iefix") format("embedded-opentype"),
-        url("MabryPro-Medium.woff2") format("woff2"),
-        url("MabryPro-Medium.woff") format("woff"),
-        url("MabryPro-Medium.ttf") format("truetype");
-    font-weight: 500;
+        url("./assets/fonts/MabryPro-Medium.eot?#iefix")
+            format("embedded-opentype"),
+        url("./assets/fonts/MabryPro-Medium.woff2") format("woff2"),
+        url("./assets/fonts/MabryPro-Medium.woff") format("woff"),
+        url("./assets/fonts/MabryPro-Medium.ttf") format("truetype");
+    font-weight: 100;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: "Mabry Pro";
-    src: url("MabryPro-Black.eot");
+    src: url("./assets/fonts/MabryPro-Black.eot");
     src: local("Mabry Pro Black"), local("MabryPro-Black"),
-        url("MabryPro-Black.eot?#iefix") format("embedded-opentype"),
-        url("MabryPro-Black.woff2") format("woff2"),
-        url("MabryPro-Black.woff") format("woff"),
-        url("MabryPro-Black.ttf") format("truetype");
+        url("./assets/fonts/MabryPro-Black.eot?#iefix")
+            format("embedded-opentype"),
+        url("./assets/fonts/MabryPro-Black.woff2") format("woff2"),
+        url("./assets/fonts/MabryPro-Black.woff") format("woff"),
+        url("./assets/fonts/MabryPro-Black.ttf") format("truetype");
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -41,12 +42,13 @@
 
 @font-face {
     font-family: "Mabry Pro";
-    src: url("MabryPro-Light.eot");
+    src: url("./assets/fonts/MabryPro-Light.eot");
     src: local("Mabry Pro Light"), local("MabryPro-Light"),
-        url("MabryPro-Light.eot?#iefix") format("embedded-opentype"),
-        url("MabryPro-Light.woff2") format("woff2"),
-        url("MabryPro-Light.woff") format("woff"),
-        url("MabryPro-Light.ttf") format("truetype");
+        url("./assets/fonts/MabryPro-Light.eot?#iefix")
+            format("embedded-opentype"),
+        url("./assets/fonts/MabryPro-Light.woff2") format("woff2"),
+        url("./assets/fonts/MabryPro-Light.woff") format("woff"),
+        url("./assets/fonts/MabryPro-Light.ttf") format("truetype");
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -54,12 +56,13 @@
 
 @font-face {
     font-family: "Mabry Pro";
-    src: url("MabryPro-BlackItalic.eot");
+    src: url("./assets/fonts/MabryPro-BlackItalic.eot");
     src: local("Mabry Pro Black Italic"), local("MabryPro-BlackItalic"),
-        url("MabryPro-BlackItalic.eot?#iefix") format("embedded-opentype"),
-        url("MabryPro-BlackItalic.woff2") format("woff2"),
-        url("MabryPro-BlackItalic.woff") format("woff"),
-        url("MabryPro-BlackItalic.ttf") format("truetype");
+        url("./assets/fonts/MabryPro-BlackItalic.eot?#iefix")
+            format("embedded-opentype"),
+        url("./assets/fonts/MabryPro-BlackItalic.woff2") format("woff2"),
+        url("./assets/fonts/MabryPro-BlackItalic.woff") format("woff"),
+        url("./assets/fonts/MabryPro-BlackItalic.ttf") format("truetype");
     font-weight: 900;
     font-style: italic;
     font-display: swap;
@@ -67,12 +70,13 @@
 
 @font-face {
     font-family: "Mabry Pro";
-    src: url("MabryPro-Regular.eot");
+    src: url("./assets/fonts/MabryPro-Regular.eot");
     src: local("Mabry Pro"), local("MabryPro-Regular"),
-        url("MabryPro-Regular.eot?#iefix") format("embedded-opentype"),
-        url("MabryPro-Regular.woff2") format("woff2"),
-        url("MabryPro-Regular.woff") format("woff"),
-        url("MabryPro-Regular.ttf") format("truetype");
+        url("./assets/fonts/MabryPro-Regular.eot?#iefix")
+            format("embedded-opentype"),
+        url("./assets/fonts/MabryPro-Regular.woff2") format("woff2"),
+        url("./assets/fonts/MabryPro-Regular.woff") format("woff"),
+        url("./assets/fonts/MabryPro-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -139,10 +143,26 @@ body {
     font-family: var(--main-font);
     font-weight: 400;
     background-color: var(--white);
+    overflow: hidden;
 }
 
 a {
     text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1 {
+    z-index: 2;
+    letter-spacing: -0.02em;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 5.625rem;
+    font-weight: 400;
+    line-height: 0.9;
 }
 
 .disable-text-selection {
