@@ -2,41 +2,89 @@
 
 @font-face {
     font-family: "Mabry Pro";
-    src: url("./assets/fonts/MabryPro-Regular.eot");
-    src: local("Mabry Pro"), local("MabryPro-Regular"),
-        url("./assets/fonts/MabryPro-Regular.eot?#iefix")
-            format("embedded-opentype"),
-        url("./assets/fonts/MabryPro-Regular.woff2") format("woff2"),
-        url("./assets/fonts/MabryPro-Regular.woff") format("woff"),
-        url("./assets/fonts/MabryPro-Regular.ttf") format("truetype");
-    font-weight: normal;
+    src: url("MabryPro-Bold.eot");
+    src: local("Mabry Pro Bold"), local("MabryPro-Bold"),
+        url("MabryPro-Bold.eot?#iefix") format("embedded-opentype"),
+        url("MabryPro-Bold.woff2") format("woff2"),
+        url("MabryPro-Bold.woff") format("woff"),
+        url("MabryPro-Bold.ttf") format("truetype");
+    font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: "Mabry Pro";
-    src: url("./assets/fonts/MabryPro-Bold.eot");
-    src: local("Mabry Pro Bold"), local("MabryPro-Bold"),
-        url("./assets/fonts/MabryPro-Bold.eot?#iefix")
-            format("embedded-opentype"),
-        url("./assets/fonts/MabryPro-Bold.woff2") format("woff2"),
-        url("./assets/fonts/MabryPro-Bold.woff") format("woff"),
-        url("./assets/fonts/MabryPro-Bold.ttf") format("truetype");
-    font-weight: bold;
+    src: url("MabryPro-Medium.eot");
+    src: local("Mabry Pro Medium"), local("MabryPro-Medium"),
+        url("MabryPro-Medium.eot?#iefix") format("embedded-opentype"),
+        url("MabryPro-Medium.woff2") format("woff2"),
+        url("MabryPro-Medium.woff") format("woff"),
+        url("MabryPro-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Mabry Pro";
+    src: url("MabryPro-Black.eot");
+    src: local("Mabry Pro Black"), local("MabryPro-Black"),
+        url("MabryPro-Black.eot?#iefix") format("embedded-opentype"),
+        url("MabryPro-Black.woff2") format("woff2"),
+        url("MabryPro-Black.woff") format("woff"),
+        url("MabryPro-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Mabry Pro";
+    src: url("MabryPro-Light.eot");
+    src: local("Mabry Pro Light"), local("MabryPro-Light"),
+        url("MabryPro-Light.eot?#iefix") format("embedded-opentype"),
+        url("MabryPro-Light.woff2") format("woff2"),
+        url("MabryPro-Light.woff") format("woff"),
+        url("MabryPro-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Mabry Pro";
+    src: url("MabryPro-BlackItalic.eot");
+    src: local("Mabry Pro Black Italic"), local("MabryPro-BlackItalic"),
+        url("MabryPro-BlackItalic.eot?#iefix") format("embedded-opentype"),
+        url("MabryPro-BlackItalic.woff2") format("woff2"),
+        url("MabryPro-BlackItalic.woff") format("woff"),
+        url("MabryPro-BlackItalic.ttf") format("truetype");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Mabry Pro";
+    src: url("MabryPro-Regular.eot");
+    src: local("Mabry Pro"), local("MabryPro-Regular"),
+        url("MabryPro-Regular.eot?#iefix") format("embedded-opentype"),
+        url("MabryPro-Regular.woff2") format("woff2"),
+        url("MabryPro-Regular.woff") format("woff"),
+        url("MabryPro-Regular.ttf") format("truetype");
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 :root {
-    --main-font: "Noto Sans", sans-serif;
+    --main-font: "Mabry Pro", sans-serif;
 
     --text-color-white: rgb(255, 255, 255);
     --text-color-white-85: rgba(255, 255, 255, 0.85);
     --text-color-white-65: rgba(255, 255, 255, 0.65);
     --text-color-white-50: rgba(255, 255, 255, 0.5);
-
-    --color-background: rgba(24, 26, 29, 1);
 
     --white: white;
     --black: black;
@@ -83,12 +131,18 @@
 * {
     margin: 0;
     padding: 0;
-    color: var(--text-color-white);
-    font-family: var(--main-font);
+    box-sizing: border-box;
 }
 
 body {
-    background-color: var(--color-background);
+    color: var(--black);
+    font-family: var(--main-font);
+    font-weight: 400;
+    background-color: var(--white);
+}
+
+a {
+    text-decoration: none;
 }
 
 .disable-text-selection {

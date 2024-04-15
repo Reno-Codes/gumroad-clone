@@ -1,0 +1,20 @@
+section {
+    border-bottom: 2px solid var(--black);
+    padding-top: 6.5rem;
+    padding-bottom: 7rem;
+    position: relative;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
+.bg-pink {
+    background-color: var(--pink);
+}
+
+.bg-black {
+    background-color: var(--black);
+}

@@ -1,0 +1,85 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid var(--black);
+    height: 70px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: var(--black);
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    font-size: 1rem;
+    position: relative;
+}
+
+.active {
+    text-decoration: none;
+}
+
+.active:after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--black);
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    transition: all 0.2s ease;
+}
+
+.nav-link-underline {
+    width: 0%;
+    height: 1px;
+    background-color: var(--black);
+    position: absolute;
+    top: auto;
+    bottom: 0%;
+    left: 0%;
+    right: auto;
+    transition: all 0.2s ease;
+}
+
+.nav-link-underline.hovered {
+    width: 100%;
+}
+
+.nav-menu-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link.log-in {
+    color: var(--black);
+    border-left: 2px solid var(--black);
+    padding: 1.5rem 3vw;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 1rem;
+}
+
+.nav-link.sign-up {
+    color: var(--white);
+    background-color: var(--black);
+    border-left: 2px solid var(--black);
+    border-bottom: 2px solid var(--black);
+    padding: 1.5rem 3vw;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 1rem;
+}
+
+.nav-link.sign-up:hover {
+    background-color: var(--pink);
+    color: var(--black);
+}
