@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+    font-family: "Mabry Pro";
+    src: url("./assets/fonts/MabryPro-Regular.eot");
+    src: local("Mabry Pro"), local("MabryPro-Regular"),
+        url("./assets/fonts/MabryPro-Regular.eot?#iefix")
+            format("embedded-opentype"),
+        url("./assets/fonts/MabryPro-Regular.woff2") format("woff2"),
+        url("./assets/fonts/MabryPro-Regular.woff") format("woff"),
+        url("./assets/fonts/MabryPro-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Mabry Pro";
+    src: url("./assets/fonts/MabryPro-Bold.eot");
+    src: local("Mabry Pro Bold"), local("MabryPro-Bold"),
+        url("./assets/fonts/MabryPro-Bold.eot?#iefix")
+            format("embedded-opentype"),
+        url("./assets/fonts/MabryPro-Bold.woff2") format("woff2"),
+        url("./assets/fonts/MabryPro-Bold.woff") format("woff"),
+        url("./assets/fonts/MabryPro-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --main-font: "Noto Sans", sans-serif;
+
+    --text-color-white: rgb(255, 255, 255);
+    --text-color-white-85: rgba(255, 255, 255, 0.85);
+    --text-color-white-65: rgba(255, 255, 255, 0.65);
+    --text-color-white-50: rgba(255, 255, 255, 0.5);
+
+    --color-background: rgba(24, 26, 29, 1);
+
+    --white: white;
+    --black: black;
+    --pink: #ff90e8;
+    --dim-grey: #78716c;
+    --white-smoke: #f4f4f0;
+    --yellow-dark: #ffc900;
+    --yellow: #f1f333;
+    --orange: #e2442f;
+    --teal: #23a094;
+    --purple: #90a8ed;
+    --red: #98282a;
+    --violet: #b23386;
+
+    --font-size-xl: 18px;
+    --font-size-l: 16px;
+    --font-size-m: 14px;
+    --font-size-s: 12px;
+    --font-size-xs: 11px;
+    --font-size-xxs: 10px;
+
+    --opacity-100: 1;
+    --opacity-85: 0.85;
+    --opacity-65: 0.65;
+    --opacity-50: 0.5;
+
+    --padding-xl: 24px;
+    --padding-l: 20px;
+    --padding-m: 16px;
+    --padding-s: 10px;
+    --padding-xs: 8px;
+
+    --border-radius-s: 4px;
+    --border-radius-m: 8px;
+    --border-radius-l: 12px;
+    --border-radius-circle: 50%;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--text-color-white);
+    font-family: var(--main-font);
+}
+
+body {
+    background-color: var(--color-background);
+}
+
+.disable-text-selection {
+    -moz-user-select: none; /* firefox */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE*/
+    user-select: none; /* Standard syntax */
+}
