@@ -1,4 +1,3 @@
-import Footer from "../components/Footer";
 import "./featuresPage.css";
 
 function FeaturesPage() {
@@ -629,8 +628,6 @@ function FeaturesPage() {
                         </div>
                     </div>
                 </section>
-
-                <Footer></Footer>
             </div>
         </>
     );

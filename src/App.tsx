@@ -7,6 +7,7 @@ import BlogPage from "./pages/BlogPage";
 import DiscoverPage from "./pages/DiscoverPage";
 import LoginPage from "./pages/LoginPage";
 import SignUpPage from "./pages/SignUpPage";
+import Footer from "./components/Footer";
 
 function App() {
     return (
@@ -23,6 +24,8 @@ function App() {
                 <Route path="/login" element={<LoginPage />}></Route>
                 <Route path="/signup" element={<SignUpPage />}></Route>
             </Routes>
+
+            <Footer></Footer>
         </>
     );
 }
