@@ -57,6 +57,7 @@ nav {
 .nav-menu-right {
     display: flex;
     align-items: center;
+    border-bottom: 2px solid var(--black);
 }
 
 .nav-link.log-in {
@@ -72,8 +73,7 @@ nav {
     color: var(--white);
     background-color: var(--black);
     border-left: 2px solid var(--black);
-    border-bottom: 2px;
-    padding: 1.5rem 3vw;
+    padding: 1.4rem 3vw;
     margin-left: 0;
     margin-right: 0;
     font-size: 1rem;

@@ -12,12 +12,33 @@ section {
     background-color: var(--yellow);
 }
 
+.bg-yellow-dark {
+    background-color: var(--yellow-dark);
+    color: var(--black);
+}
+
+.item-left {
+    grid-column: 1;
+}
+
+.item-right {
+    grid-column: 2;
+}
+
+.text-yellow-dark {
+    color: var(--yellow-dark);
+}
+
 .bg-pink {
     background-color: var(--pink);
 }
 
 .bg-black {
     background-color: var(--black);
+}
+
+.bg-purple {
+    background-color: var(--purple);
 }
 
 /* Section Yellow First */
@@ -215,4 +236,270 @@ section {
     bottom: auto;
     left: -3rem;
     right: auto;
+}
+
+/* 2nd Section (white) */
+.section-title {
+    font-size: 4.5rem;
+    line-height: 1;
+    font-weight: 400;
+}
+
+/* 3rd - grid halves etc
+ */
+/* Yellow dark 1st */
+.grid-halves {
+    width: 100%;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    border-bottom: 2px solid #000;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+}
+
+.border-right {
+    border-right: 2px solid var(--black);
+}
+
+.border-left {
+    border-left: 2px solid var(--black);
+}
+
+.centered {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.column-padding {
+    height: 100%;
+    min-height: 22rem;
+    align-items: center;
+    padding: 6.5vw;
+    display: flex;
+    position: relative;
+}
+
+.column-padding.centered {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.callout-wrap {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    position: relative;
+}
+
+.callout-image {
+    width: 100%;
+    height: 100%;
+    max-width: 36rem;
+    min-width: 100%;
+    object-fit: contain;
+}
+
+.sticker {
+    position: absolute;
+    top: auto;
+    bottom: -1rem;
+    left: -1rem;
+    right: auto;
+}
+
+.sticker.features-01 {
+    width: 10.625rem;
+    bottom: -4rem;
+    left: -7rem;
+}
+
+/* Dark 1st */
+.content-grid {
+    width: 100%;
+    max-width: 48rem;
+    grid-column-gap: 0px;
+    grid-row-gap: 3rem;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-auto-columns: 1fr;
+    align-content: start;
+    align-items: stretch;
+    justify-items: stretch;
+    margin-left: 0;
+    margin-right: 0;
+    display: grid;
+}
+
+.spacing-base {
+    width: 100%;
+    grid-row-gap: 1.5rem;
+    flex: 1;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-auto-columns: 1fr;
+    align-content: start;
+    align-items: stretch;
+    justify-items: stretch;
+    display: grid;
+}
+
+.text-div-halves {
+    color: var(--white);
+    font-size: 1.25rem;
+}
+
+/* Pink Slider */
+.border-bottom {
+    border-bottom: 2px solid var(--black);
+}
+
+/* transform: translateX(-3651px); opacity: 1; z-index: 27; transition: opacity 500ms ease 0s; */
+
+.slider-grid {
+    width: 100%;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+}
+
+.column-padding.slider-column-left {
+    justify-content: center;
+    padding-left: 10vw;
+}
+
+.column-padding.slider-column-right {
+    padding-left: 0;
+    padding-right: 10vw;
+}
+
+.relative {
+    position: relative;
+}
+
+.text-lg {
+    letter-spacing: -0.01em;
+    font-size: 2rem;
+    line-height: 1.25;
+}
+
+.name-button {
+    background-color: var(--white);
+    color: var(--black);
+    background-image: url(../assets/images/gumroad-btn-logo.svg);
+    background-position: 8px 59%;
+    background-repeat: no-repeat;
+    background-size: 2.25rem;
+    border-radius: 50px;
+    padding: 0.6rem 1rem 0.7rem 3.25rem;
+    font-size: 1.063rem;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    bottom: 4rem;
+    right: -3.35vw;
+}
+
+.name-button.bottom-left {
+    position: absolute;
+    top: auto;
+    bottom: 2rem;
+    left: -2rem;
+    right: auto;
+}
+
+/* 2nd Halves */
+.text-purple {
+    color: var(--purple);
+}
+
+/* Last Pink */
+.shadow-button-wrap {
+    min-width: 18rem;
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+    justify-self: center;
+    transform-style: preserve-3d;
+    transform: translate3d(0rem, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg)
+        rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+}
+
+.shadow-button-wrap:hover {
+    transform-style: preserve-3d;
+    transform: translate3d(-1rem, -1rem, 0px) scale3d(1, 1, 1) rotateX(0deg)
+        rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+}
+
+.shadow-button-text {
+    z-index: 1;
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    border-radius: 4px;
+    padding: 1.1rem 2rem 1.2rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    position: relative;
+}
+
+.shadow-button-shadow {
+    width: 100%;
+    height: 100%;
+    background-color: var(--pink);
+    border: 2px solid #000;
+    border-radius: 4px;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+}
+
+.shadow-button-shadow._2 {
+    background-color: var(--yellow);
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    transition: all 0.3s ease-in-out;
+}
+
+.shadow-button-shadow._2.red {
+    background-color: var(--red);
+    transform: translate3d(0rem, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg)
+        rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+
+.shadow-button-shadow.yellow {
+    background-color: var(--yellow);
+    transform: translate3d(0rem, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg)
+        rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    transition: all 0.2s ease-in-out;
+}
+
+.shadow-button-wrap:hover .shadow-button-shadow._2.red {
+    background-color: var(--red);
+    transform: translate3d(1rem, 1rem, 0px) scale3d(1, 1, 1) rotateX(0deg)
+        rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+}
+
+.shadow-button-wrap:hover .shadow-button-shadow.yellow {
+    background-color: var(--yellow);
+    transform: translate3d(0.5rem, 0.5rem, 0px) scale3d(1, 1, 1) rotateX(0deg)
+        rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
 }
