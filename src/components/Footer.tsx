@@ -65,7 +65,7 @@ function Footer() {
                         </div>
                         <div id="w-node-_footer" className="spacing-small">
                             <a
-                                href="/"
+                                href="/features"
                                 aria-current="page"
                                 className="footer-link w--current"
                             >

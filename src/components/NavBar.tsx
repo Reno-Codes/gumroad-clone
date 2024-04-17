@@ -1,22 +1,24 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import "./navbar.css";
 import { observer } from "mobx-react";
 import navLinkStore from "../stores/NavLinkStore";
 import capitalizeString from "../utils/capitalizeString";
+import { useEffect } from "react";
 
 function Navbar() {
     const store = navLinkStore;
+    const location = useLocation();
+    const navigate = useNavigate();
 
     const handleHover = (navlink: string, isHovered: boolean) => {
         store.setHovered(navlink, isHovered);
     };
 
-    const checkHome = (navlink: string) => {
-        if (navlink === "features") {
-            return true;
+    useEffect(() => {
+        if (location.pathname === "/") {
+            navigate("/features");
         }
-        return false;
-    };
+    }, [location]);
 
     return (
         <header>
@@ -26,7 +28,7 @@ function Navbar() {
                         key={navlink}
                         onMouseEnter={() => handleHover(navlink, true)}
                         onMouseLeave={() => handleHover(navlink, false)}
-                        to={checkHome(navlink) ? "/" : `/${navlink}`}
+                        to={`/${navlink}`}
                         className="nav-link"
                     >
                         <div className="nav-link-text">
